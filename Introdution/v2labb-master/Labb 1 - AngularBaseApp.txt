@@ -1,0 +1,43 @@
+﻿	┌────────────────────────────┐
+	│ Labbupgift: AngularBaseApp │
+	└────────────────────────────┘
+I denna labb ska du skapa en basapplikation för framtida AngularJS/Bootstrap projekt.
+Här ska vi sätta upp AngularJS med en module och routing samt Bootstrap med en Navbar.
+
+	┌───────────┐
+	│ Uppgifter │
+	└───────────┘
+- Skapa en ny website
+- Ladda ner AngularJS.Route och bootstrap från NuGet
+- Skapa filer:
+	- Index.html
+	- Views/Home.html
+	- Views/Partials/Navbar.html
+	- Scripts/Modules/module.js
+	- Scripts/Routes/route.js
+	- Scripts/Controllers/main.controller.js
+	- Scripts/Controllers/home.controller.js
+	- CSS/master.css
+- Länka script-filer och master.css i Index.html
+- Lägg till "@import url(../Content/bootstrap.min.css)" i master.css
+- Lägg till direktiv i Index.html:
+	- ng-app
+	- ng-controller (för MainController)
+	- ng-view
+	- ng-include (för Navbar)
+- Sätt upp en module med ett generellt namn, såsom "mainModule"
+- Sätt upp routing:
+	- Lägg till en "Home"-route ("/")
+	- Lägg till en parameter i "Home"-routen som heter activeTab: "Home"
+- Sätt upp MainController:
+	- Lägg till en "go"-funktion ($scope.go = function(url))
+	- Injecta "$route" i controllern
+	- Lägg till "$scope.$route = $route"
+- Använd ng-class="{active: $route.current.activeTab == 'Home'}" på knapparna i Navbar
+
+	┌────────────────┐
+	│ När du är klar │
+	└────────────────┘
+Spara den här hemsidan någonstans. Sedan när du ska göra en ny hemsida kan du kopiera denna och fortsätta härifrån.
+Tanken är att spara tid när vi börjar med nya projekt genom att inte behöva sätta upp allt från början varje gång.
+När detta är klart kan du fortsätta med nästa labb.

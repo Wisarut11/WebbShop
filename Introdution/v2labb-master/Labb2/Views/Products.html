@@ -1,0 +1,35 @@
+﻿<div class="col-md-12">
+    <h1 ng-bind="title"></h1>
+</div>
+
+<div ng-repeat="category in categories track by $index">
+    <div class="col-md-12">
+        <h2 ng-bind="category.name"></h2>
+    </div>
+    <div class="col-md-12">
+        <table class="table">
+            <tr>
+                <th>Product</th>
+                <th>Thumbnail</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="product in category.products track by $index">
+                <td class="col-md-1" ng-click="go('/Product/' + product.id)">
+                    {{product.name}}
+                </td>
+                <td class="col-md-1">
+                    <img ng-src="{{product.thumbnailUrl}}" />
+                </td>
+                <td>
+                    {{product.description}}
+                </td>
+                <td>
+                    <button type="button" class="btn btn-success" ng-click="addToCart(product)">
+                        <span class="glyphicon glyphicon-plus"></span> Add to cart
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

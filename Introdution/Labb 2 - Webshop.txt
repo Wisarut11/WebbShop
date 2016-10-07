@@ -1,0 +1,55 @@
+﻿	┌─────────────────────┐
+	│ Labbupgift: Webshop │
+	└─────────────────────┘
+Skapa en ny hemsida med AngularJS och Bootstrap.
+Du ska bygga en enkel webshop med en produktlista och en kundvagn.
+Tänk på att använda Bootstraps Grid för att strukturera hemsidans innehåll.
+
+Fokusera först på det vanliga uppgifterna och se till att du förstår dem.
+Får du tid över kan du göra så många extrauppgifter som du hinner med!
+
+
+	┌───────────┐
+	│ Uppgifter │
+	└───────────┘
+- Navbar
+	- Länk till Home och Products
+	- Länk till Cart (kundvagn)
+- "Home" sida
+	- Carousel med lite snygga bilder
+	- Godtycklig text uppdelad i kolumner och rader
+- "Products" sida
+	- Lista alla produkter
+	- Gå in på varje produkt
+	- Lägg till produkt i kundvagn
+- "Cart" sida
+	- Se alla produkter i kundvagnen
+	- Ta bort produkter ur kundvagnen
+
+
+	┌────────────────┐
+	│ Extrauppgifter │
+	└────────────────┘
+- Product-modell
+	- Varje produkt ska ha en egen bild
+		- Bilden ska visas som thumbnail i listan
+		- Hela bilden ska visas på produktens sida
+	- Produkter ska ha en kategori
+		- Produkter ska endast listas per kategori
+		- Man ska kunna välja vilken kategori man vill se
+- "Home" sida
+	- Produkterna och bilderna i carousellen ska komma från sidans egna produkter
+	- Text från slumpmässigt utvalda produkter
+- "Cart" sida
+	- Ändra antalet av varje produkt i kundvagnen
+- "Admin" sida
+	- Skapa en sida där du kan lägga till, ta bort och redigera produkter
+
+TIPS: Ett bra ställe för placeholder-bilder: http://placehold.it/500x500 (ger en bild som är 500x500 pixlar)
+
+	┌───────────┐
+	│ Inlämning │
+	└───────────┘
+- Skapa ett GIT repository, till exempel på github.com.
+- Pusha upp ert projekt till ert repository.
+- Maila länken till repositoryt till mig på john.fristedt@chas.se.
